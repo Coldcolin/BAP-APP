@@ -86,6 +86,7 @@ const Head = styled.div`
     font-family: poppins;
     @media (min-width: 200px) and (max-width: 1000px) {
         text-align: center;
+        font-size: 30px;
     }
 `
 const Talk = styled.div`

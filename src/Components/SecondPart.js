@@ -113,6 +113,7 @@ const Button = styled(NavLink)`
     align-items: center;
     transition: all 350ms;
     transform: scale(1);
+    text-decoration: none;
 
     :hover{
         cursor: pointer;
