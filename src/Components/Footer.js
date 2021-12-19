@@ -44,6 +44,9 @@ const Up = styled.div`
     align-items: center;
     justify-content: center;
     font-size: 20px;
+    @media (min-width: 200px) and (max-width: 1000px) {
+        font-size: 16px;
+    }
 `
 const Down = styled.div`
     width: 100%;
@@ -65,5 +68,6 @@ const Title = styled.div`
     font-family: 'Lobster', cursive;
     @media (min-width: 200px) and (max-width: 1000px) {
         text-align: center;
+        font-size: 2rem;
     }
 `

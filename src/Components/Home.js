@@ -10,24 +10,10 @@ import Sixth from "./SixthPart"
 import styled from "styled-components"
 
 const Home = () => {
-    const [toggle, setToggle] = useState(false);
-
-    const onToggle = () => {
-    // const check = window.scrollY;
-    // console.log(check);
-
-    if (window.scrollY >= 100) {
-        setToggle(true);
-    } else {
-        setToggle(false);
-    }
-    };
-
-    window.addEventListener("scroll", onToggle);
     return (
         <Container>
             <Wrapper>
-                <Header bg={toggle ? "bg" : ""}/>
+                <Header/>
                 <FirstPart />
                 <SecondPart />
                 <ThirdPart />

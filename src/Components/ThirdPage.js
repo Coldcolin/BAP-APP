@@ -96,6 +96,10 @@ const Talk = styled.div`
     color: white;
     font-weight: 500;
     margin-top: 10px;
+    @media (min-width: 200px) and (max-width: 1000px) {
+        font-size: 15px;
+        padding-left: 20px;
+    }
 `
 const Button = styled.div`
     width: 150px;

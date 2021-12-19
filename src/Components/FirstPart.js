@@ -13,7 +13,7 @@ const FirstPart = () => {
                 </Fade>
                 {/* <Button htmlFrom="pic">Learn More</Button> */}
                 <ExternalLink href="https://www.rccg.org/" id="pic">
-                <span style={{color: 'white', fontSize: "30px", textDecoration: "none", fontWeight: "bold" }}>Learn More</span>
+                <span style={{width: "200px", color: 'white', fontSize: "30px", textDecoration: "none", fontWeight: "bold", backgroundColor: "purple", borderRadius: "10px", height: "40px" }}>Learn More</span>
                 </ExternalLink>
             </Wrapper>
         </Container>

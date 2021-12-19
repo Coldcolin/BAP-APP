@@ -93,6 +93,11 @@ const Talk = styled.div`
     color: #484748;
     font-weight: 400;
     margin-top: 10px;
+
+    @media (min-width: 200px) and (max-width: 1000px) {
+        font-size: 15px;
+        padding-left: 20px;
+    }
 `
 const Button = styled(NavLink)`
     width: 150px;

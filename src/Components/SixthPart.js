@@ -62,7 +62,8 @@ const LeftPart = styled.div`
     margin-top: 40px;
     margin-bottom: 50px;
     @media (min-width: 200px) and (max-width: 1000px) {
-        width: 320px;
+        width: 280px;
+        font-size: 30px;
     }
     `
 const LeftPart1 = styled.div`
@@ -86,7 +87,8 @@ const LeftPart1 = styled.div`
     margin-bottom: 50px;
     background-position: center;
     @media (min-width: 200px) and (max-width: 1000px) {
-        width: 320px;
+        width: 280px;
+        font-size: 30px;
     }
     `
 const LeftPart2 = styled.div`
@@ -110,7 +112,8 @@ const LeftPart2 = styled.div`
     margin-bottom: 50px;
     background-position: center;
     @media (min-width: 200px) and (max-width: 1000px) {
-        width: 320px;
+        width: 280px;
+        font-size: 30px;
     }
 `
 const LeftPart3 = styled.div`
@@ -134,6 +137,7 @@ const LeftPart3 = styled.div`
     margin-top: 40px;
     margin-bottom: 50px;
     @media (min-width: 200px) and (max-width: 1000px) {
-        width: 320px;
+        width: 280px;
+        font-size: 30px;
     }
 `

@@ -107,6 +107,7 @@ const LeftPart = styled.div`
     margin-bottom: 50px;
     @media (min-width: 200px) and (max-width: 1000px) {
         width: 100%;
+        font-size: 30px;
     }
 `
 const RightPart = styled.form`
@@ -123,6 +124,7 @@ const Head = styled.div`
     font-family: poppins;
     @media (min-width: 200px) and (max-width: 1000px) {
         text-align: center;
+        font-size: 30px;
     }
 `
 const Talk = styled.div`
@@ -174,6 +176,9 @@ const Name = styled.input`
     border: none;
     margin: 10px;
     border-radius: 10px;
+    @media (min-width: 200px) and (max-width: 1000px) {
+        width: 200px;
+    }
 `
 
 const Testimony = styled.input`
@@ -185,6 +190,9 @@ const Testimony = styled.input`
     border-radius: 10px;
     display: flex;
     align-items: flex-start;
+    @media (min-width: 200px) and (max-width: 1000px) {
+        width: 200px;
+    }
 `
 const Holder = styled.div`
 width: 150px;

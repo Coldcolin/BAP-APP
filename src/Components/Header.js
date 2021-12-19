@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useState}from 'react'
+import Drop from "./Dropdown"
 import styled from "styled-components"
 import logo from "./Images/Logo-removebg-preview.png"
 import { NavLink } from "react-router-dom"
 
 const Header = () => {
+    const [toggle, setToggle] = useState(false)
+    const Change = () => {
+        setToggle(true)
+    }
     return (
         <Container>
             <Wrapper>
@@ -11,14 +16,18 @@ const Header = () => {
                 <Links>
                 <Home to="/" >Home</Home>
                 <About to="/About">About Us</About>
-                {/* <About to="">Give</About> */}
+                <About to="">Give</About>
                 </Links>
-                <Dots>
+                <Dots onClick={Change}>
                     <Line></Line>
                     <Line></Line>
                     <Line></Line>
+                    {/* <Drop/> */}
                 </Dots>
             </Wrapper>
+            {
+                toggle? <Drop setToggle = {setToggle} toggle={toggle}/> : null
+            }
         </Container>
     )
 }
@@ -28,7 +37,7 @@ export default Header
 const Container = styled.div`
     width: 100%;
     height: 70px;
-    background-color: ${({ bg }) => (bg ? "purple" : "rgba(0,0,0, 0.3)")};
+    background-color: rgba(0,0,0, 0.3);
     position: fixed;
     top: 0;
     z-index: 10;
@@ -56,13 +65,16 @@ const Links = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    margin-right: -600px;
-    @media (min-width: 200px) and (max-width: 1000px) {
+    margin-right: -1000px;
+    @media (min-width: 200px) and (max-width: 1024px) {
+        margin-right: -750px;
+    }
+    @media (max-width: 425px) {
         display: none;
     }
 `
 const Home = styled(NavLink)`
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     font-weight: bold;
     font-family: poppins;
@@ -70,7 +82,7 @@ const Home = styled(NavLink)`
     cursor: pointer;
 `
 const About = styled(NavLink)`
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     font-weight: bold;
     font-family: poppins;
@@ -82,13 +94,13 @@ const Dots = styled.div`
     margin: 15px;
 `
 const Line = styled.div`
-    width: 100%;
-    height: 8px;
+    width: 80%;
+    height: 5px;
     background-color: white;
     margin: 5px;
     border-radius: 5px;
     /* display: none; */
-    @media (min-width: 1000px) {
+    @media (min-width: 768px) {
         display: none;
     }
 `

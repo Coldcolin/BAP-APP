@@ -87,6 +87,7 @@ const Head = styled.div`
     font-family: poppins;
     @media (min-width: 200px) and (max-width: 1000px) {
         text-align: center;
+        font-size: 30px;
     }
 `
 const Talk = styled.div`
@@ -96,6 +97,10 @@ const Talk = styled.div`
     color: #484748;
     font-weight: 400;
     margin-top: 10px;
+    @media (min-width: 200px) and (max-width: 1000px) {
+        font-size: 15px;
+        padding-left: 20px;
+    }
 `
 const Button = styled(NavLink)`
     width: 150px;
