@@ -69,6 +69,8 @@ const LeftPart = styled.div`
     margin-bottom: 50px;
     @media (min-width: 200px) and (max-width: 1000px) {
         width: 100%;
+        font-size: 40px;
+        padding: 8px;
     }
 `
 const RightPart = styled.div`
@@ -105,7 +107,7 @@ const Talk = styled.div`
 const Button = styled(NavLink)`
     width: 150px;
     height: 50px;
-    border-radius: 20px;
+    border-radius: 5px;
     color: white;
     background-color: purple;
     font-size: 19px;

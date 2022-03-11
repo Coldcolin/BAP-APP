@@ -13,7 +13,7 @@ const FirstPart = () => {
                 </Fade>
                 {/* <Button htmlFrom="pic">Learn More</Button> */}
                 <ExternalLink href="https://www.rccg.org/" id="pic">
-                <span style={{width: "200px", color: 'white', fontSize: "30px", textDecoration: "none", fontWeight: "bold", backgroundColor: "purple", borderRadius: "10px", height: "40px" }}>Learn More</span>
+                <span style={{width: "300px", color: 'white', fontSize: "24px", textDecoration: "none", fontWeight: "bold", backgroundColor: "purple", borderRadius: "10px", height: "50px", margin: "5px", padding: "10px" }}>Learn More</span>
                 </ExternalLink>
             </Wrapper>
         </Container>
@@ -24,8 +24,8 @@ export default FirstPart
 
 const Container = styled.div`
     width: 100%;
-    height: 150vh;
-    background-image: url("/258995985_420418026329157_4631813873730107652_n.jpg");
+    height: 110vh;
+    background-image: url("/toppage.jpg");
     background-size: cover;
     background-position: center;
     background-color: rgba(128,0,128, 0.4);
@@ -35,7 +35,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     @media (min-width: 200px) and (max-width: 1000px) {
-        
+        height: 120vh;
     }
 `
 const Wrapper = styled.div`
@@ -60,11 +60,14 @@ const BigWords = styled.div`
     font-size: 64px;
     font-weight: 700;
     font-family: poppins;
-    background-color: rgba(0,0,0, 0.4);
+    border-radius: 5px;
+    padding-left: 20px;
+    background-color: rgba(0,0,0, 0.1);
     margin-bottom: 50px;
     @media (min-width: 200px) and (max-width: 1000px) {
-        font-size: 30px;
+        font-size: 24px;
         font-weight: 700;
+        margin-top: 50px;
     }
 `
 const Button = styled.div`

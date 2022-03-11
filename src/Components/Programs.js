@@ -47,4 +47,7 @@ const Image = styled.img`
     width: 800px;
     height: 500px;
     object-fit: cover;
+    @media (min-width: 200px) and (max-width: 1440px) {
+        width: 300px;
+    }
 `

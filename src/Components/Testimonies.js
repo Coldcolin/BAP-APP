@@ -60,7 +60,7 @@ const Container = styled.div`
 `
 const Wrapper = styled.div`
     width: 100%;
-    height: 100%;
+    min-height: calc(200vh - 70px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,6 +107,7 @@ const Testimoni = styled.div`
 `
 const Holder = styled.div`
     display: flex;
+    min-height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;

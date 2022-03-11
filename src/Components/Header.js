@@ -37,7 +37,7 @@ export default Header
 const Container = styled.div`
     width: 100%;
     height: 70px;
-    background-color: rgba(0,0,0, 0.3);
+    background-color: rgba(0,0,0, 0.4);
     position: fixed;
     top: 0;
     z-index: 10;
@@ -71,6 +71,10 @@ const Links = styled.div`
     }
     @media (max-width: 425px) {
         display: none;
+    }
+    @media (max-width: 768px) {
+        margin-right: 0.5%;
+        width: 28%;
     }
 `
 const Home = styled(NavLink)`

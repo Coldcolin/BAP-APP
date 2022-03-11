@@ -102,7 +102,7 @@ const Talk = styled.div`
 const Button = styled(NavLink)`
     width: 150px;
     height: 50px;
-    border-radius: 20px;
+    border-radius: 5px;
     color: white;
     background-color: purple;
     font-size: 19px;

@@ -21,10 +21,10 @@ const Dropdown = (props) => {
 export default Dropdown
 
 const Container = styled.div`
-    width: 60px;
-    height: 150px;
+    width: 200px;
+    height: 400px;
     background-color: white;
-    margin-left: 79%;
+    margin-left: 50%;
     border-radius: 10px;
     @media (min-width: 768px) {
         display: none;
